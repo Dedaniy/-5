@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-магазин електроніки</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 6px;
+}
+</style>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1>Інтернет-магазин електроніки</h1>
+        <p>Ласкаво просимо до магазину сучасної техніки, де можна знайти ноутбуки, смартфони та корисні аксесуари.</p>
+    </header>
+<nav aria-label="Основна навігація">
+    <ul>
+        <li><a href="#home" aria-current="page">Головна</a></li>
+        <li><a href="#laptops">Ноутбуки</a></li>
+        <li><a href="#smartphones">Смартфони</a></li>
+        <li><a href="#accessories">Аксесуари</a></li>
+    </ul>
+</nav>
+<main id="home">
+    <div class="content">
+    <section id="laptops">
+        <h2>Ноутбуки</h2>
+        <h3>Пристрої для навчання, роботи та розваг</h3>
+
+        <p><strong>Ноутбуки</strong> є важливою категорією товарів у сучасному інтернет-магазині електроніки. Вони поєднують зручність, мобільність і достатню продуктивність для щоденних завдань.</p>
+
+        <p>Під час вибору ноутбука користувачі звертають увагу на процесор, оперативну пам’ять, обсяг накопичувача та автономність. <em>Якісний ноутбук</em> підходить для навчання, офісної роботи, програмування та перегляду мультимедіа.</p>
+   <figure>
+    <img src="images/laptop.jfif"
+         alt="Сучасний ноутбук сріблястого кольору"
+         title="Ноутбук"
+         width="300">
+
+    <figcaption>
+        Ноутбук для навчання, роботи та щоденного використання.
+    </figcaption>
+</figure>
+    </section>
+    <section id="smartphones">
+    <h2>Смартфони</h2>
+    <h3>Засоби зв’язку та доступу до цифрового світу</h3>
+
+    <p><strong>Смартфони</strong> використовуються для спілкування, перегляду сайтів, фотографування, навчання та роботи з мобільними застосунками.</p>
+
+    <p><em>Сучасний смартфон</em> поєднує функції телефону, фотоапарата, навігатора і мінікомп’ютера.</p>
+
+    <img src="images/smartphone.jfif"
+         alt="Сучасний смартфон з великим екраном"
+         title="Смартфон"
+         width="300">
+</section>
+<section id="accessories">
+    <h2>Аксесуари</h2>
+    <h3>Додаткові товари для комфортного користування технікою</h3>
+
+    <p><strong>Аксесуари</strong> допомагають зробити використання електроніки більш зручним і безпечним. До них належать навушники, зарядні пристрої, кабелі та інші корисні речі.</p>
+
+    <p><em>Правильний вибір аксесуарів</em> покращує щоденне користування технікою і часто продовжує термін її служби.</p>
+
+    <img src="images/headphones.jfif"
+         alt="Бездротові навушники чорного кольору"
+         title="Навушники"
+         width="300">
+<h3>Основні терміни</h3>
+
+<dl>
+    <dt>Процесор</dt>
+    <dd>Основний компонент пристрою, який виконує обчислення та обробляє дані.</dd>
+
+    <dt>Оперативна пам’ять</dt>
+    <dd>Пам’ять, що тимчасово зберігає дані під час роботи програм.</dd>
+
+    <dt>Гарантія</dt>
+    <dd>Період, протягом якого виробник або продавець обслуговує товар у разі несправності.</dd>
+</dl>    
+
+<h3>Каталог товарів</h3>
+
+<table>
+    <caption>Каталог товарів інтернет-магазину електроніки</caption>
+
+    <thead>
+        <tr>
+            <th scope="col">№</th>
+            <th scope="col">Назва товару</th>
+            <th scope="col">Ціна</th>
+            <th scope="col">Наявність</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Ноутбук Acer Aspire</td>
+            <td>22999 грн</td>
+            <td>Є в наявності</td>
+        </tr>
+
+        <tr>
+            <th scope="row">2</th>
+            <td>Samsung Galaxy A15</td>
+            <td>8999 грн</td>
+            <td>Є в наявності</td>
+        </tr>
+
+        <tr>
+            <th scope="row">3</th>
+            <td>Бездротові навушники TWS</td>
+            <td>1499 грн</td>
+            <td>Є в наявності</td>
+        </tr>
+
+        <tr>
+            <th scope="row">4</th>
+            <td>Power Bank 20000 mAh</td>
+            <td>1199 грн</td>
+            <td>Немає в наявності</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="4">У таблиці наведено актуальні товари магазину.</td>
+        </tr>
+    </tfoot>
+</table>
+
+<h3>Додаткова інформація</h3>
+
+<p>
+    Детальніше ознайомитися з асортиментом електроніки можна на сайті
+    <a href="https://rozetka.com.ua/"
+       target="_blank"
+       rel="noopener noreferrer">
+       Rozetka
+    </a>.
+</p>
+</section>
+
+<div id="app">
+<section id="product-filter">
+
+    <h2>Каталог товарів</h2>
+
+    <label for="search">Пошук товару:</label>
+    <input id="search" type="text" v-model="searchText" placeholder="Введіть назву товару">
+
+    <label for="category">Категорія:</label>
+    <select id="category" v-model="selectedCategory">
+        <option value="all">Усі товари</option>
+        <option value="Ноутбуки">Ноутбуки</option>
+        <option value="Смартфони">Смартфони</option>
+        <option value="Аксесуари">Аксесуари</option>
+    </select>
+   
+
+    <p v-if="filteredProducts.length === 0">Товарів не знайдено.</p>
+
+    <div id="product-cards">
+        <product-card
+            v-for="product in filteredProducts"
+            :key="product.id"
+            :product="product"
+            @add-to-cart="addToCart"
+        ></product-card>
+    </div>
+
+    <section id="cart">
+        <h2>Кошик</h2>
+        <p v-if="cart.length === 0">Кошик порожній.</p>
+
+        <ul v-if="cart.length > 0">
+            <li v-for="(item, index) in cart" :key="index">
+                {{ item.name }} — {{ item.price }} грн
+            </li>
+        </ul>
+
+        <p v-if="cart.length > 0"><strong>Загальна сума:</strong> {{ cartTotal }} грн</p>
+    </section>
+</section>
+ </div>
+<section class="gallery">
+    <h2>Популярні товари</h2>
+
+    <div class="gallery-grid">
+
+        <div class="card">Ноутбук Acer</div>
+        <div class="card">Samsung Galaxy</div>
+        <div class="card">Навушники Xiaomi</div>
+        <div class="card">Power Bank</div>
+        <div class="card">Смарт-годинник</div>
+        <div class="card">Ігрова миша</div>
+        <div class="card">Клавіатура RGB</div>
+        <div class="card">Монітор 24"</div>
+        <div class="card">Колонка Bluetooth</div>
+
+    </div>
+</section>
+
+ </div> 
+
+<aside>
+    <h2>Інформація для покупців</h2>
+    <p>У магазині представлено сучасну електроніку для навчання, роботи та щоденного користування.</p>
+</aside>
+
+</main>
+<footer>
+    <p>&copy; 2026 Інтернет-магазин електроніки. Усі права захищено.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
